@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H+B/qldHhXM=",
+  "dgSpecHash": "Pa1AALdj1yM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Niver\\Desktop\\curso Net core\\PuntoVenta\\DB\\DB.csproj",
+  "projectFilePath": "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\DB\\DB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Niver\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.10\\microsoft.entityframeworkcore.8.0.10.nupkg.sha512",
     "C:\\Users\\Niver\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.10\\microsoft.entityframeworkcore.abstractions.8.0.10.nupkg.sha512",

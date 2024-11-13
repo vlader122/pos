@@ -10,14 +10,24 @@ namespace Repository
         {
             _context = context;
         }
-        public void Create(Cliente entity)
+        public Cliente Create(Cliente entity)
         {
-            throw new NotImplementedException();
+            Cliente cliente = new Cliente();
+            cliente.Nombres = entity.Nombres;
+            cliente.Apellidos = entity.Apellidos;
+            cliente.Telefono = entity.Telefono;
+            cliente.Direccion = entity.Direccion;
+            _context.Add(cliente);
+            _context.SaveChanges();
+            return cliente;
         }
 
-        public void Delete(int id)
+        public Cliente Delete(int id)
         {
-            throw new NotImplementedException();
+            Cliente cliente = _context.Clientes.Find(id);
+            _context.Clientes.Remove(cliente);
+            _context.SaveChanges();
+            return cliente;
         }
 
         public List<Cliente> GetAll()
@@ -28,12 +38,15 @@ namespace Repository
 
         public Cliente GetById(int id)
         {
-            throw new NotImplementedException();
+            Cliente cliente = _context.Clientes.Find(id);
+            return cliente;
         }
 
-        public void Update(Cliente entity)
+        public Cliente Update(Cliente entity)
         {
-            throw new NotImplementedException();
+            _context.Update(entity);
+            _context.SaveChanges();
+            return entity;
         }
     }
 }

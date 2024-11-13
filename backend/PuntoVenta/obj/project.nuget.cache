@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TzGL6HouRgo=",
+  "dgSpecHash": "hEcYv7/vSuc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Niver\\Desktop\\curso Net core\\PuntoVenta\\PuntoVenta\\PuntoVenta.csproj",
+  "projectFilePath": "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\PuntoVenta\\PuntoVenta.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Niver\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Niver\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

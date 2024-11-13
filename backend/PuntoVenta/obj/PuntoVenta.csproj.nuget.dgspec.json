@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Niver\\Desktop\\curso Net core\\PuntoVenta\\PuntoVenta\\PuntoVenta.csproj": {}
+    "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\PuntoVenta\\PuntoVenta.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Niver\\Desktop\\curso Net core\\PuntoVenta\\DB\\DB.csproj": {
+    "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\DB\\DB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Niver\\Desktop\\curso Net core\\PuntoVenta\\DB\\DB.csproj",
+        "projectUniqueName": "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\DB\\DB.csproj",
         "projectName": "DB",
-        "projectPath": "C:\\Users\\Niver\\Desktop\\curso Net core\\PuntoVenta\\DB\\DB.csproj",
+        "projectPath": "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\DB\\DB.csproj",
         "packagesPath": "C:\\Users\\Niver\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Niver\\Desktop\\curso Net core\\PuntoVenta\\DB\\obj\\",
+        "outputPath": "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\DB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Niver\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -75,14 +75,14 @@
         }
       }
     },
-    "C:\\Users\\Niver\\Desktop\\curso Net core\\PuntoVenta\\PuntoVenta\\PuntoVenta.csproj": {
+    "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\PuntoVenta\\PuntoVenta.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Niver\\Desktop\\curso Net core\\PuntoVenta\\PuntoVenta\\PuntoVenta.csproj",
+        "projectUniqueName": "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\PuntoVenta\\PuntoVenta.csproj",
         "projectName": "PuntoVenta",
-        "projectPath": "C:\\Users\\Niver\\Desktop\\curso Net core\\PuntoVenta\\PuntoVenta\\PuntoVenta.csproj",
+        "projectPath": "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\PuntoVenta\\PuntoVenta.csproj",
         "packagesPath": "C:\\Users\\Niver\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Niver\\Desktop\\curso Net core\\PuntoVenta\\PuntoVenta\\obj\\",
+        "outputPath": "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\PuntoVenta\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Niver\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -100,8 +100,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Niver\\Desktop\\curso Net core\\PuntoVenta\\DB\\DB.csproj": {
-                "projectPath": "C:\\Users\\Niver\\Desktop\\curso Net core\\PuntoVenta\\DB\\DB.csproj"
+              "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\DB\\DB.csproj": {
+                "projectPath": "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\DB\\DB.csproj"
+              },
+              "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\Service\\Service.csproj"
               }
             }
           }
@@ -151,6 +154,139 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\Repository\\Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\Repository\\Repository.csproj",
+        "projectName": "Repository",
+        "projectPath": "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\Niver\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Niver\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\DB\\DB.csproj": {
+                "projectPath": "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\DB\\DB.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\Service\\Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\Service\\Service.csproj",
+        "projectName": "Service",
+        "projectPath": "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\Niver\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Niver\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\DB\\DB.csproj": {
+                "projectPath": "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\DB\\DB.csproj"
+              },
+              "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\Repository\\Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

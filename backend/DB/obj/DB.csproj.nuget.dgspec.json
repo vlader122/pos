@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Niver\\Desktop\\curso Net core\\PuntoVenta\\DB\\DB.csproj": {}
+    "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\DB\\DB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Niver\\Desktop\\curso Net core\\PuntoVenta\\DB\\DB.csproj": {
+    "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\DB\\DB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Niver\\Desktop\\curso Net core\\PuntoVenta\\DB\\DB.csproj",
+        "projectUniqueName": "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\DB\\DB.csproj",
         "projectName": "DB",
-        "projectPath": "C:\\Users\\Niver\\Desktop\\curso Net core\\PuntoVenta\\DB\\DB.csproj",
+        "projectPath": "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\DB\\DB.csproj",
         "packagesPath": "C:\\Users\\Niver\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Niver\\Desktop\\curso Net core\\PuntoVenta\\DB\\obj\\",
+        "outputPath": "C:\\Users\\Niver\\Desktop\\curso Net core\\pos\\backend\\DB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Niver\\AppData\\Roaming\\NuGet\\NuGet.Config",
