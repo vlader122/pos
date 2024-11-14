@@ -10,32 +10,30 @@ namespace Service
         {
             _clienteRepository = clienteRepository;
         }
-        public Cliente Create(Cliente entity)
+
+        public async Task<Cliente> Create(Cliente entity)
         {
-            return _clienteRepository.Create(entity);
+            return await _clienteRepository.Create(entity);
         }
 
-        public Cliente Delete(int id)
+        public async Task<Cliente> Delete(int id)
         {
-            return _clienteRepository.Delete(id);
-
+            return await _clienteRepository.Delete(id);
         }
 
-        public List<Cliente> GetAll()
+        public async Task<List<Cliente>> GetAll()
         {
-            return _clienteRepository.GetAll();
+            return await _clienteRepository.GetAll();
         }
 
-        public Cliente GetById(int id)
+        public async Task<Cliente> GetById(int id)
         {
-            return _clienteRepository.GetById(id);
-
+            return await _clienteRepository.GetById(id);
         }
 
-        public Cliente Update(Cliente entity)
+        public async Task<Cliente> Update(Cliente entity)
         {
-            return _clienteRepository.Update(entity);
-
+            return await _clienteRepository.Update(entity);
         }
     }
 }

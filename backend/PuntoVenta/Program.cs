@@ -20,9 +20,15 @@ builder.Services.AddDbContext<PosContext>(options =>
 
 //Repository
 builder.Services.AddScoped<ClienteRepository>();
+builder.Services.AddScoped<CategoriaRepository>();
+builder.Services.AddScoped<ProductoRepository>();
 
 //Service
 builder.Services.AddScoped<ClienteService>();
+builder.Services.AddScoped<CategoriaService>();
+builder.Services.AddScoped<ProductoService>();
+
+
 
 
 var app = builder.Build();

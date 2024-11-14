@@ -1,5 +1,99 @@
 [
   {
+    "ContainingType": "PuntoVenta.Controllers.CategoriaController",
+    "Method": "GetAll",
+    "RelativePath": "api/Categoria",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[DB.Models.Categoria, DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PuntoVenta.Controllers.CategoriaController",
+    "Method": "Create",
+    "RelativePath": "api/Categoria",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoria",
+        "Type": "DB.Models.Categoria",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PuntoVenta.Controllers.CategoriaController",
+    "Method": "Update",
+    "RelativePath": "api/Categoria",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoria",
+        "Type": "DB.Models.Categoria",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PuntoVenta.Controllers.CategoriaController",
+    "Method": "GetById",
+    "RelativePath": "api/Categoria/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DB.Models.Categoria",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PuntoVenta.Controllers.CategoriaController",
+    "Method": "Delete",
+    "RelativePath": "api/Categoria/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "PuntoVenta.Controllers.ClienteController",
     "Method": "GetAll",
     "RelativePath": "api/Cliente",
@@ -20,16 +114,54 @@
     ]
   },
   {
-    "ContainingType": "PuntoVenta.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
+    "ContainingType": "PuntoVenta.Controllers.ClienteController",
+    "Method": "Create",
+    "RelativePath": "api/Cliente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cliente",
+        "Type": "DB.Models.Cliente",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PuntoVenta.Controllers.ClienteController",
+    "Method": "Update",
+    "RelativePath": "api/Cliente",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cliente",
+        "Type": "DB.Models.Cliente",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PuntoVenta.Controllers.ClienteController",
+    "Method": "GetById",
+    "RelativePath": "api/Cliente/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[PuntoVenta.WeatherForecast, PuntoVenta, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "DB.Models.Cliente",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -37,7 +169,116 @@
         ],
         "StatusCode": 200
       }
+    ]
+  },
+  {
+    "ContainingType": "PuntoVenta.Controllers.ClienteController",
+    "Method": "Delete",
+    "RelativePath": "api/Cliente/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
     ],
-    "EndpointName": "GetWeatherForecast"
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PuntoVenta.Controllers.ProductoController",
+    "Method": "GetAll",
+    "RelativePath": "api/Producto",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[DB.Models.Producto, DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PuntoVenta.Controllers.ProductoController",
+    "Method": "Create",
+    "RelativePath": "api/Producto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "producto",
+        "Type": "DB.Models.Producto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PuntoVenta.Controllers.ProductoController",
+    "Method": "Update",
+    "RelativePath": "api/Producto",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "producto",
+        "Type": "DB.Models.Producto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PuntoVenta.Controllers.ProductoController",
+    "Method": "GetById",
+    "RelativePath": "api/Producto/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DB.Models.Producto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PuntoVenta.Controllers.ProductoController",
+    "Method": "Delete",
+    "RelativePath": "api/Producto/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

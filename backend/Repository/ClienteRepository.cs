@@ -1,5 +1,6 @@
 ﻿using DB;
 using DB.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Repository
 {
@@ -10,43 +11,42 @@ namespace Repository
         {
             _context = context;
         }
-        public Cliente Create(Cliente entity)
-        {
-            Cliente cliente = new Cliente();
-            cliente.Nombres = entity.Nombres;
-            cliente.Apellidos = entity.Apellidos;
-            cliente.Telefono = entity.Telefono;
-            cliente.Direccion = entity.Direccion;
-            _context.Add(cliente);
-            _context.SaveChanges();
-            return cliente;
-        }
 
-        public Cliente Delete(int id)
+        public async Task<Cliente> Create(Cliente entity)
         {
-            Cliente cliente = _context.Clientes.Find(id);
-            _context.Clientes.Remove(cliente);
-            _context.SaveChanges();
-            return cliente;
-        }
-
-        public List<Cliente> GetAll()
-        {
-            List<Cliente> clientes = _context.Clientes.ToList();
-            return clientes;
-        }
-
-        public Cliente GetById(int id)
-        {
-            Cliente cliente = _context.Clientes.Find(id);
-            return cliente;
-        }
-
-        public Cliente Update(Cliente entity)
-        {
-            _context.Update(entity);
-            _context.SaveChanges();
+            _context.Clientes.Add(entity);
+            await _context.SaveChangesAsync();
             return entity;
         }
+
+        public async Task<Cliente> Delete(int id)
+        {
+            Cliente cliente = await _context.Clientes.FindAsync(id);
+            if (cliente != null)
+            { 
+                _context.Clientes.Remove(cliente);
+                await _context.SaveChangesAsync();
+                return cliente;
+            }
+            return null;
+        }
+
+        public async Task<List<Cliente>> GetAll()
+        {
+            return await _context.Clientes.ToListAsync();
+        }
+
+        public async Task<Cliente> GetById(int id)
+        {
+            return await _context.Clientes.FindAsync(id);
+        }
+
+        public async Task<Cliente> Update(Cliente entity)
+        {
+            _context.Entry(entity).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+            return entity;
+        }
+
     }
 }

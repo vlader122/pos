@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace DB.Models
@@ -18,7 +19,7 @@ namespace DB.Models
         public decimal Precio { get; set; }
         //clave foranea
         public int CategoriaId { get; set; }
-        public virtual Categoria Categoria { get; set; }
+        public virtual Categoria ?Categoria { get; set; }
 
     }
 }

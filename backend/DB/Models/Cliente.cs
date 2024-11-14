@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace DB.Models
@@ -17,7 +18,7 @@ namespace DB.Models
         public string Apellidos { get; set; }
         public string Direccion { get; set; }
         public string Telefono { get; set; }
-        public virtual ICollection<Venta> Ventas { get; set; }
-
+        [JsonIgnore]
+        public virtual ICollection<Venta> ?Ventas { get; set; }
     }
 }
