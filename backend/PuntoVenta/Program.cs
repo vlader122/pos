@@ -22,12 +22,13 @@ builder.Services.AddDbContext<PosContext>(options =>
 builder.Services.AddScoped<ClienteRepository>();
 builder.Services.AddScoped<CategoriaRepository>();
 builder.Services.AddScoped<ProductoRepository>();
+builder.Services.AddScoped<VentaRepository>();
 
 //Service
 builder.Services.AddScoped<ClienteService>();
 builder.Services.AddScoped<CategoriaService>();
 builder.Services.AddScoped<ProductoService>();
-
+builder.Services.AddScoped<VentaService>();
 
 
 

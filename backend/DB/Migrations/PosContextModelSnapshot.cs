@@ -36,7 +36,7 @@ namespace DB.Migrations
 
                     b.HasKey("CategoriaId");
 
-                    b.ToTable("Categorias");
+                    b.ToTable("Categorias", (string)null);
                 });
 
             modelBuilder.Entity("DB.Models.Cliente", b =>
@@ -65,7 +65,7 @@ namespace DB.Migrations
 
                     b.HasKey("ClienteId");
 
-                    b.ToTable("Clientes");
+                    b.ToTable("Clientes", (string)null);
                 });
 
             modelBuilder.Entity("DB.Models.DetalleVenta", b =>
@@ -94,7 +94,7 @@ namespace DB.Migrations
 
                     b.HasIndex("VentaId");
 
-                    b.ToTable("DetalleVentas");
+                    b.ToTable("DetalleVentas", (string)null);
                 });
 
             modelBuilder.Entity("DB.Models.Producto", b =>
@@ -122,7 +122,7 @@ namespace DB.Migrations
 
                     b.HasIndex("CategoriaId");
 
-                    b.ToTable("Productos");
+                    b.ToTable("Productos", (string)null);
                 });
 
             modelBuilder.Entity("DB.Models.Venta", b =>
@@ -149,7 +149,7 @@ namespace DB.Migrations
 
                     b.HasIndex("ClienteId");
 
-                    b.ToTable("Ventas");
+                    b.ToTable("Ventas", (string)null);
                 });
 
             modelBuilder.Entity("DB.Models.DetalleVenta", b =>

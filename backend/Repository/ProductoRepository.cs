@@ -33,7 +33,7 @@ namespace Repository
 
         public async Task<List<Producto>> GetAll()
         {
-            return await _context.Productos.ToListAsync();
+            return await _context.Productos.Include(c=>c.Categoria).ToListAsync();
         }
 
         public async Task<Producto> GetById(int id)

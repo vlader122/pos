@@ -18,6 +18,7 @@ namespace DB.Models
         public int Cantidad { get; set; }
         public decimal Precio { get; set; }
         //clave foranea
+        [ForeignKey("CategoriaId")]
         public int CategoriaId { get; set; }
         public virtual Categoria ?Categoria { get; set; }
 
