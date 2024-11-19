@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DB.Models
 {
-    public class Cliente
+    public class Cliente : IValidatableObject
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -20,5 +20,13 @@ namespace DB.Models
         public string Telefono { get; set; }
         [JsonIgnore]
         public virtual ICollection<Venta> ?Ventas { get; set; }
+
+        public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
+        {
+            if(Nombres.Length < 2 || Nombres.Length > 10)
+            {
+                yield return new ValidationResult("La longitud debe estar entre 2 a 10 caracteres", new[] { "Nombres"});
+            }
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using DB.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DB
 {
-    public class PosContext : DbContext
+    public class PosContext : IdentityDbContext
     {
         public PosContext(DbContextOptions<PosContext> options)
             : base(options) { }

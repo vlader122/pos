@@ -1,4 +1,5 @@
 ﻿using DB.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Service;
@@ -15,7 +16,7 @@ namespace PuntoVenta.Controllers
             _categoriaService = categoriaService;
         }
 
-        [HttpGet]
+        [HttpGet, Authorize]
         public async Task<ActionResult<IEnumerable<Categoria>>> GetAll()
         {
             return Ok(await _categoriaService.GetAll());
